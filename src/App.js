@@ -17,20 +17,22 @@ function App() {
   });
 
   return (
-    <React.Fragment>
-      <div className="App">
-        <Navbar />
-        <Container maxWidth="x1" sx={{ marginTop: 4 }}>
-          <Grid container spacing={5} alignItems="center">
+    <div className="App">
+      <Navbar />
+      <Container maxWidth="x1" sx={{ marginTop: 4 }}>
+        <Grid container spacing={5} alignItems="center">
+          <Grid item xs={12}>
             <SliderSelect data={data} setData={setData} />
-            <TenureSelect />
           </Grid>
-          <Grid item xs={12} md={6}>
-            <Result />
+          <Grid item xs={12}>
+            <TenureSelect data={data} setData={setData} />
           </Grid>
-        </Container>
-      </div>
-    </React.Fragment>
+        </Grid>
+        <Grid item xs={12} md={6}>
+          <Result />
+        </Grid>
+      </Container>
+    </div>
   );
 }
 
