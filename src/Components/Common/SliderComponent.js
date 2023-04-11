@@ -1,7 +1,7 @@
 import React from "react";
 import { Slider } from "@mui/material";
 import { Typography } from "@mui/material";
-import Stack from "@mui/material";
+import { Stack } from "@mui/material";
 
 const SliderComponent = ({
   defaultValue,
