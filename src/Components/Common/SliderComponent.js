@@ -32,6 +32,14 @@ const SliderComponent = ({
         value={value}
         step={steps}
       />
+      <Stack direction="row" justifyContent="space-between">
+        <Typography variant="caption" color="text.secondary">
+          {unit} {min}
+        </Typography>
+        <Typography variant="caption" color="text.secondary">
+          {unit} {max}
+        </Typography>
+      </Stack>
     </Stack>
   );
 };
