@@ -5,8 +5,8 @@ import { FormControl } from "@mui/material";
 import { Select } from "@mui/material";
 
 export default function TenureSelect({ data, setData }) {
-  const handleChange = (event, value) => {
-    setData({ ...data, loanTerm: value });
+  const handleChange = (event) => {
+    setData({ ...data, loanTerm: event.target.value });
   };
 
   return (
