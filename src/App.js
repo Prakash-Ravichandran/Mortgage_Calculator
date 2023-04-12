@@ -28,7 +28,7 @@ function App() {
             <TenureSelect data={data} setData={setData} />
           </Grid>
         </Grid>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={6} sx={{ marginTop: 4 }}>
           <Result data={data} />
         </Grid>
       </Container>
